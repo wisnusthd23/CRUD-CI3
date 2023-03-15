@@ -69,7 +69,7 @@ class Auth extends CI_Controller
             $data = [
                 'nama' => $this->input->post('nama', true),
                 'email' => $this->input->post('email', true),
-                'foto' => 'default.jpg',
+                'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT)
             ];
 
